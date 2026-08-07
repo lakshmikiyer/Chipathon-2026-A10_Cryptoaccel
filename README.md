@@ -94,7 +94,7 @@ For this tapeout, we are using an open-source toolchain to complete the RTL-to-G
 | Lakshmi K Iyer    | lakvlsi_90908 | IIT, Bombay                        | Team Lead    | Ph.D. Research Scholar / Postgraduate  | RTL Core Design & Architecture + RTL Design of Interface + Team Management + Documentation and Presentations            |
 | Yashvardhan Singh | zysteresis    | MIT, Manipal / STMicroelectronics  | Team Member  | Undergraduate (III)                    | Design Verification + Post-Synth Verification + PD via Librelane + Documentation + GitHub VCS and Docs |
 | Tarun R S         | tarun_rs05    | IIIT, Bangalore                    | Team Member  | Undergraduate (II)                     | RTL Design + PD via ORFS                                                                |
-| Harshitha Shetty  | harshi070852  | PESIT, Bangalore                   | Team Member  | Undergraduate (IV)                     | AXI-Lite Wrapper Design                                                                 |
+
 
 ---
 
