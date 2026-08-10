@@ -278,6 +278,10 @@ spi_slave (Top)
 > LVS Clean
 <img width="1595" height="1001" alt="image" src="https://github.com/user-attachments/assets/7e493af1-56e7-4905-baba-0ae694d4807d" />
 
+> **ERC**
+<img width="1280" height="178" alt="image" src="https://github.com/user-attachments/assets/1ecaa033-9ec0-40c2-befe-b19400a3fa61" />
+
+
 ---
 
 ## 📦 Final Deliverables
@@ -308,6 +312,8 @@ spi_slave (Top)
 > **📸 Pin Placement (VDD, VSS, clk, rst_n, sclk, mosi, miso, cs_n)**
  <img width="1580" height="990" alt="image" src="https://github.com/user-attachments/assets/25ded058-5cbf-4125-8071-076284b170f1" />
 
+> **Post PNR Timing Report**
+<img width="1216" height="586" alt="image" src="https://github.com/user-attachments/assets/50262ac5-f9ac-4011-9f76-07e58ad8712f" />
 
 ---
                         
