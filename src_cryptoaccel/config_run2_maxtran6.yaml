@@ -1,0 +1,153 @@
+meta:
+  version: 3
+  flow: Classic
+
+# ---- SDC (custom, two clocks + CDC false-paths) ----
+FALLBACK_SDC:     dir::constraints_run2_maxtran6.sdc
+PNR_SDC_FILE:     dir::constraints_run2_maxtran6.sdc
+SIGNOFF_SDC_FILE: dir::constraints_run2_maxtran6.sdc
+
+# ---- design ----
+DESIGN_NAME: spi_slave
+VERILOG_FILES:
+  - dir::reset_sync.v
+  - dir::ascon_round_s1.v
+  - dir::ascon_round_s2.v
+  - dir::ascon_core_adpt_encdec.v      # patched: has S_DAT_APPLY data-path pipeline
+  - dir::axi_ascon.v
+  - dir::axi_master.v
+  - dir::spi_slave.v
+
+# ---- clock ----
+CLOCK_PORT: clk
+CLOCK_PERIOD: 62.5                     # 16 MHz (safe). 40=25MHz, 31.25=32MHz once it closes.
+
+# ---- ban delay cells (prevent repair_design loops); DO NOT ban buf/inv ----
+EXTRA_EXCLUDED_CELLS:
+  - "gf180mcu_fd_sc_mcu7t5v0__dlya_1"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlya_2"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlya_4"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyb_1"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyb_2"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyb_4"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyc_1"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyc_2"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyc_4"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyd_1"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyd_2"
+  - "gf180mcu_fd_sc_mcu7t5v0__dlyd_4"
+
+# ---- timing corners (optimize the SLOW corner) ----
+LIB:
+  "*_tt_025C_3v30":
+    - /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+  "*_ss_125C_3v00":
+    - /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib
+  "*_ff_n40C_3v60":
+    - /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib
+DEFAULT_CORNER: max_ss_125C_3v00
+STA_CORNERS:
+  - nom_tt_025C_3v30
+  - max_ss_125C_3v00
+  - min_ff_n40C_3v60
+
+# ---- floorplan ----
+FP_SIZING: absolute
+# Grown 850 -> 960 (core 810x810 -> 920x920, +29% core area).
+
+DIE_AREA:  [0.0, 0.0, 960.0, 960.0]
+CORE_AREA: [20.0, 20.0, 940.0, 940.0]
+IO_PIN_ORDER_CFG: io.cfg
+PL_TARGET_DENSITY_PCT: 50
+# NOTE: no *_MARGIN_MULT here - they conflict with an explicit CORE_AREA.
+# Margins (reduced for compact die)
+TOP_MARGIN_MULT: 2
+BOTTOM_MARGIN_MULT: 2
+LEFT_MARGIN_MULT: 2
+RIGHT_MARGIN_MULT: 2
+
+# ---- power nets ----
+VDD_NETS: [VDD]
+GND_NETS: [VSS]
+
+# ================= POWER GRID (de-bloated to let placement legalize) =========
+PDN_CORE_RING: true                   # ring belongs with pads/chip_top, not now
+PDN_MULTILAYER: true                   # single strap layer -> far less obstruction
+### POWER PLAN
+PDN_CORE_RING_HWIDTH: 5
+PDN_CORE_RING_VWIDTH: 5
+PDN_CORE_RING_HSPACING: 2
+PDN_CORE_RING_VSPACING: 2
+PDN_CORE_RING_HOFFSET: 1
+PDN_CORE_RING_VOFFSET: 1
+PDN_VERTICAL_LAYER: Metal4
+PDN_HORIZONTAL_LAYER: Metal5
+
+PDN_VWIDTH: 1.6                         # 5um crushed cell pins -> back to 1.6
+PDN_HWIDTH: 1.6
+PDN_VSPACING: 1.6
+PDN_HSPACING: 1.6
+PDN_VPITCH: 50
+PDN_HPITCH: 50
+
+
+GPL_CELL_PADDING: 2
+DPL_CELL_PADDING: 2
+DIODE_PADDING: 2
+
+# ---- routing ----
+RT_MAX_LAYER: Metal5
+
+RT_CLOCK_MIN_LAYER: Metal2
+RT_CLOCK_MAX_LAYER: Metal5
+GRT_ALLOW_CONGESTION: true
+
+# ---- antenna (heuristic diodes = the setting that routes on GF180) ----
+RUN_ANTENNA_REPAIR: true
+RUN_HEURISTIC_DIODE_INSERTION: true
+DIODE_ON_PORTS: "in"                    # 'in' not 'both' -> ~half the diode count
+GRT_ANTENNA_REPAIR_ITERS: 10
+
+HEURISTIC_ANTENNA_THRESHOLD: 150
+
+MAX_TRANSITION_CONSTRAINT: 6.0
+MAX_CAPACITANCE_CONSTRAINT: 0.1
+MAX_FANOUT_CONSTRAINT: 10
+DESIGN_REPAIR_MAX_SLEW_PCT: 35
+DESIGN_REPAIR_MAX_CAP_PCT: 35
+GRT_DESIGN_REPAIR_MAX_SLEW_PCT: 35
+GRT_DESIGN_REPAIR_MAX_CAP_PCT: 35
+
+# ---- wire-length buffering (break wires > 350um to limit parasitic cap) ----
+DESIGN_REPAIR_MAX_WIRE_LENGTH: 180
+RUN_POST_GRT_DESIGN_REPAIR: true
+RUN_POST_GRT_RESIZER_TIMING: true
+RUN_POST_CTS_RESIZER_TIMING: true
+
+# ---- resizer margins ----
+PL_RESIZER_SETUP_SLACK_MARGIN: 0.5
+PL_RESIZER_HOLD_SLACK_MARGIN: 0.3
+GRT_RESIZER_SETUP_SLACK_MARGIN: 0.5
+GRT_RESIZER_HOLD_SLACK_MARGIN: 0.3
+PL_RESIZER_ALLOW_SETUP_VIOS: false
+GRT_RESIZER_ALLOW_SETUP_VIOS: false
+
+# ---- synthesis ----
+SYNTH_STRATEGY: "AREA 0"
+SYNTH_BUFFER_CELL: "gf180mcu_fd_sc_mcu7t5v0__buf_4/I/Z"
+SYNTH_SPLITNETS: true
+CTS_SINK_CLUSTERING_ENABLE: false
+CTS_ROOT_BUFFER: "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4"
+CTS_CLK_BUFFERS: ["gf180mcu_fd_sc_mcu7t5v0__clkbuf_2", "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4"]
+
+# ---- signoff ----
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+RUN_LINTER: true
+RUN_MAGIC_DRC: true
+RUN_KLAYOUT_DRC: true
+RUN_LVS: true
+KLAYOUT_DRC_THREADS: 1
+KLAYOUT_DRC_OPTIONS:
+  decks: "all,-antenna,-density,-cup"
+  variant: ref::$PDK
+  workers: max
