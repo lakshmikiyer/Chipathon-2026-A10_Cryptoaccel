@@ -5,8 +5,8 @@
 - Link to proposal round presentation video: [Click Here ↗](https://youtu.be/4pfbP2isbxA?si=O9V1pwiTxTNE5hqo)
 - Link to schematic review round video: [Click Here ↗](https://drive.google.com/file/d/1Om1IALZSBtE1XGMmxLGU7RnFuSFpBlrm/view)
 - Link to progress tracker: [Click Here ↗](https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/blob/main/Progress%20Tracker/readme.md)
-- Link to Layout review ppt: [Click Here ↗](https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/blob/main/Progress%20Tracker/readme.md)
-- Link to Layout review video: [Click Here ↗](https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/blob/main/Progress%20Tracker/readme.md)
+- Link to Layout review ppt: [Click Here ↗](https://drive.google.com/drive/folders/1AtdcmwkP5GPB7IbjtLGPZMGSWETwX3VG?usp=sharing)
+- Link to Layout review video: [Click Here ↗](https://drive.google.com/drive/folders/1AtdcmwkP5GPB7IbjtLGPZMGSWETwX3VG?usp=sharing)
 --- 
 <img width="2352" height="480" alt="cryptoaccel_logo" src="https://github.com/user-attachments/assets/9e05458b-7662-42a9-9287-e7aeeaf4b6a3" style="width:70%;" />
 
