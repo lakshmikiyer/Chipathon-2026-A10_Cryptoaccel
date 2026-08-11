@@ -30,12 +30,15 @@ The accelerator is built in synthesizable Verilog and taken through a complete o
 ## Repository Structure
 
 ```
-├── Progress Tracker/       # Tracker for project progress
-├── Proposal/               # Project proposal documents
-├── docs/                   # Documentation and reports
-├── rtl_design_verif/       # RTL design and verification
-├── synthesis               # Synthesis and post-synthesis verification
-├── physical_design         # Physical design
+├── Progress Tracker/            # Tracker for project progress
+├── Proposal/                    # Project proposal documents
+├── docs/                        # Documentation and reports
+├── core_rtl_design_verif/       # Ascon core's RTL design and verification
+├── core_synthesis               # Ascon core's Synthesis and post-synthesis verification
+├── core_physical_design         # Ascon core's Physical design
+├── final_src_cryptoaccel        # final chip top design files, with all the peripherals
+├── gds_cryptoaccel              # final chip top gds file 
+├── librelane_cryptoaccel        # final chip top librelane run summary and files
 ├── LICENSE
 └── README.md
 ```
