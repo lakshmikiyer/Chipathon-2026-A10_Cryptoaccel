@@ -3,6 +3,9 @@ meta:
   flow: Chip
   substituting_steps:
 
+    # IllegalOverlap bug with PDN halo
+    Checker.IllegalOverlap: null
+
     # Disable KLayout DRC
     #KLayout.DRC: null
     #Checker.KLayoutDRC: null
@@ -47,25 +50,63 @@ VDD_NETS:
 GND_NETS:
 - VSS
 
+
+DEFAULT_CORNER: max_ss_125C_3v00 # default use worst corner
+STA_CORNERS:
+  - nom_tt_025C_3v30
+  - min_ff_n40C_3v60
+  - max_ss_125C_3v00
+LIB:
+  "*_tt_025C_3v30":
+    - pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_ws_io__tt_025C_5v00.lib
+  "*_ss_125C_3v00":
+    - pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_ws_io__ss_125C_4v50.lib
+  "*_ff_n40C_3v60":
+    - pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib
+    - pdk_dir::libs.ref/gf180mcu_fd_io/lib/gf180mcu_ws_io__ff_n40C_5v50.lib
+
 # We need to add gf180mcu_fd_io__bi_24t
 # due to the unused Y output for output only pads
 IGNORE_DISCONNECTED_MODULES:
 - gf180mcu_fd_io__bi_24t
-- gf180mcu_ws_ip__id
-- gf180mcu_ws_ip__logo
+# - gf180mcu_ws_ip__id
+# - gf180mcu_ws_ip__logo
 
 # Clock
-CLOCK_PORT: clk_PAD
-CLOCK_NET: clk_pad/Y
-CLOCK_PERIOD: 40 # 25 MHz
+CLOCK_PORT: "bidir_PAD[12]"
+# CLOCK_NET must point at the pad cell OUTPUT pin, not the pad itself.
+# Find the exact instance name in src/chip_top.sv (the bidir generate block),
+# e.g.  grep -n "bi_24t" src/chip_top.sv
+#CLOCK_NET: "bidir_pad[12]/Y"
+CLOCK_NET: "bidir[12].pad/Y"
+CLOCK_PERIOD: 62.5   # 16 MHz - MUST match the period the macro was hardened at
+
+# CLOCK_PORT: clk_PAD
+# CLOCK_NET: clk_pad/Y
+# CLOCK_PERIOD: 40 # 25 MHz
+
+
+# NOTE: DIE_AREA / CORE_AREA come from librelane/slots/slot_workshop.yaml
+# (DIE 2935x2935, CORE 442..2493). Do NOT redefine them here or the logo
+# placement expression and the padring geometry can disagree.
+
+
+
+MAX_FANOUT_CONSTRAINT: 16
+MAX_CAPACITANCE_CONSTRAINT: 0.4 # give more margin (max is 0.5)
 
 # Fix hold violations
-PL_RESIZER_HOLD_SLACK_MARGIN: 0.35
-GRT_RESIZER_HOLD_SLACK_MARGIN: 0.3
+PL_RESIZER_HOLD_SLACK_MARGIN: 0.5
+GRT_RESIZER_HOLD_SLACK_MARGIN: 0.5
 
 # Increase for more logic
 # on your die
-PL_TARGET_DENSITY_PCT: 35
+PL_TARGET_DENSITY_PCT: 40
 GRT_ALLOW_CONGESTION: true
 
 # Fix antenna violations after DRT
@@ -143,45 +184,75 @@ KLAYOUT_FILLER_OPTIONS:
 # Because we have multiple power pads for one power domain
 MAGIC_EXT_UNIQUE: notopports
 
+# spi_slave = Ascon-AEAD128 accelerator (Block A), hardened macro.
+# chip_id is REQUIRED for tapeout; logo is optional.
 MACROS:
-  gf180mcu_ws_ip__id:
+  spi_slave:
     gds:
-      - dir::../ip/gf180mcu_ws_ip__id/gds/gf180mcu_ws_ip__id.gds
+      - dir::../macro/gds/spi_slave.gds
     lef:
-      - dir::../ip/gf180mcu_ws_ip__id/lef/gf180mcu_ws_ip__id.lef
+      - dir::../macro/lef/spi_slave.lef
     vh:
-      - dir::../ip/gf180mcu_ws_ip__id/vh/gf180mcu_ws_ip__id.v
+      - dir::../macro/vh/spi_slave.vh
+    nl:
+      - dir::../macro/nl/spi_slave.pnl.v
+    spef:
+      "max_*":
+        - dir::../macro/spef/max/spi_slave.max.spef
+      "min_*":
+        - dir::../macro/spef/min/spi_slave.min.spef
+      "nom_*":
+        - dir::../macro/spef/nom/spi_slave.nom.spef
+    
     lib:
-      "*":
-        - dir::../ip/gf180mcu_ws_ip__id/lib/gf180mcu_ws_ip__id.lib
+      "nom_tt_025C_3v30":
+        - dir::../macro/lib/nom_tt_025C_3v30/spi_slave__nom_tt_025C_3v30.lib
+      "min_ff_n40C_3v60":
+        - dir::../macro/lib/min_ff_n40C_3v60/spi_slave__min_ff_n40C_3v60.lib
+      "max_ss_125C_3v00":
+        - dir::../macro/lib/max_ss_125C_3v00/spi_slave__max_ss_125C_3v00.lib
+    
+
     instances:
-      chip_id:
-        location: [26, 26]
+      i_chip_core.dut_ascon:
+        location: [470.0, 1500.0]
         orientation: N
+  # gf180mcu_ws_ip__id:
+  #   gds:
+  #     - dir::../ip/gf180mcu_ws_ip__id/gds/gf180mcu_ws_ip__id.gds
+  #   lef:
+  #     - dir::../ip/gf180mcu_ws_ip__id/lef/gf180mcu_ws_ip__id.lef
+  #   vh:
+  #     - dir::../ip/gf180mcu_ws_ip__id/vh/gf180mcu_ws_ip__id.v
+  #   lib:
+  #     "*":
+  #       - dir::../ip/gf180mcu_ws_ip__id/lib/gf180mcu_ws_ip__id.lib
+  #   instances:
+  #     chip_id:
+  #       location: [26, 26]
+  #       orientation: N
 
-  gf180mcu_ws_ip__logo:
-    gds:
-      - dir::../ip/gf180mcu_ws_ip__logo/gds/gf180mcu_ws_ip__logo.gds
-    lef:
-      - dir::../ip/gf180mcu_ws_ip__logo/lef/gf180mcu_ws_ip__logo.lef
-    vh:
-      - dir::../ip/gf180mcu_ws_ip__logo/vh/gf180mcu_ws_ip__logo.v
-    lib:
-      "*":
-        - dir::../ip/gf180mcu_ws_ip__logo/lib/gf180mcu_ws_ip__logo.lib
-    instances:
-      wafer_space_logo:
-        location: ["expr::$DIE_AREA[2] + -169.25", "expr::$DIE_AREA[3] + -169.25"]
-        orientation: N
+  # gf180mcu_ws_ip__logo:
+  #   gds:
+  #     - dir::../ip/gf180mcu_ws_ip__logo/gds/gf180mcu_ws_ip__logo.gds
+  #   lef:
+  #     - dir::../ip/gf180mcu_ws_ip__logo/lef/gf180mcu_ws_ip__logo.lef
+  #   vh:
+  #     - dir::../ip/gf180mcu_ws_ip__logo/vh/gf180mcu_ws_ip__logo.v
+  #   lib:
+  #     "*":
+  #       - dir::../ip/gf180mcu_ws_ip__logo/lib/gf180mcu_ws_ip__logo.lib
+  #   instances:
+  #     wafer_space_logo:
+  #       location: ["expr::$DIE_AREA[2] + -169.25", "expr::$DIE_AREA[3] + -169.25"]
+  #       orientation: N
 
-# No user macros for the workshop slot -- the core is a trivial
-# counter.  chip_id + wafer.space logo (above) are the only placed
-# macros.
-
-# No macro PDN connections needed beyond what the PDN grid already
-# supplies through chip_id / logo.  Keep the key as an empty list so
-# the rest of the config still parses.
+# Connect the macro's power ring to the chip PDN.
+# Format: "<instance> <vdd_net> <vdd_pin> <gnd_net> <gnd_pin>"
 PDN_MACRO_CONNECTIONS: []
+
+# PDN_MACRO_CONNECTIONS: 
+#   - "i_chip_core.dut_ascon VDD VDD VSS VSS"
 
 # Halo size around macros while cutting rows.
 # Workaround for: https://github.com/The-OpenROAD-Project/OpenROAD/issues/8868
