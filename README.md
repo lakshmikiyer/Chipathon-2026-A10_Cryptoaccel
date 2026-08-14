@@ -153,7 +153,7 @@ Chipathon-2026-A10_Cryptoaccel/
 <img width="2048" height="1473" alt="image" src="https://github.com/user-attachments/assets/420a6632-c3ed-4a0d-82ad-7331dc9077f0" style="width:50%;"/>
 
 ---
-## Architecture & Design 
+## Architecture & Design  
 
 The design consists of three main blocks:
 
@@ -166,7 +166,7 @@ The design consists of three main blocks:
 <img width="1340" height="967" alt="image" src="https://github.com/user-attachments/assets/19bc8b5f-9126-45ad-8db6-b8464ad2b238" style="width:70%;"/>
 
 ---
-## Design Verification  
+## Design Verification -- ASCON CORE
 Functional verification of the ASCON core Design Verification:
 Two independent testbench approaches were used to maximize stimulus coverage:
 
@@ -176,28 +176,6 @@ Two independent testbench approaches were used to maximize stimulus coverage:
 - **Result**: 100% pass, 0 fails across all test cases above; the same Verilog testbench was later reused for post-synthesis GLS.
 
 `Full Documentation`:  https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/tree/main/rtl_design_verif#verification-of-the-ascon-core
-
----
-## Synthesis
-
-Synthesized the ASCON core using **Yosys 0.64** against the `gf180mcuD` PDK via the LibreLane flow.
-
-- **Result**: 6,298 standard cells, ~178,786 µm² area (14.78% of die).
-- **Verification**: Reused the RTL testbench to run post-synthesis gate-level simulation (GLS), confirming functional correctness before physical implementation.
-- **Timing-aware GLS**: Back-annotated SDF timing into the netlist and verified using Synopsys VCS (via EDA Playground) — all test cases passed.
-
-`Full Documentation`: https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/blob/main/synthesis/readme.md
-
----
-## Physical Design — OpenROAD RTL-to-GDSII Flow  
-For this tapeout, we are using an open-source toolchain to complete the RTL-to-GDS flow, following the LibreLane flow recommended by the IEEE SSCS Chipathon committee.
-
-- Toolchain: LibreLane, a Python-based RTL-to-GDSII flow orchestrating Yosys, OpenROAD, and Magic, run via the IIC-OSIC-TOOLS Docker container (PDK: gf180mcuD).
-- Setup: Docker Desktop + KLayout + Xming (VcXsrv) for GUI passthrough; flow launched via `librelane config.yaml --pdk gf180mcuD --pdk-root /foss/pdks --run-tag <tag>.`
-- Current flow conditions: 50 MHz clock (20 ns period), 60% target density, 1100×1100 µm die.
-- Progress (on ASCON core) : We have completed a full 80-stage run (~43 minutes) with clean DRC, LVS, antenna, and PDN signoff, and passing timing across nominal and fast corners. We are continuing to refine routing and clocking for full PVT corner closure, with additional prototyping.
-
-`Full Documentation`: https://github.com/lakshmikiyer/SSCS_CHIPATHON_2026_CRYPTOACCEL/blob/main/physical_design/readme.md
 
 ---
 ## Team
