@@ -26,21 +26,129 @@ CryptoAccel team is proposing a lightweight hardware accelerator implementing th
 
 The accelerator is built in synthesizable Verilog and taken through a complete open-source RTL-to-GDSII flow using Open-source toolchain targeting the **GlobalFoundries 180nm (GF180MCU)** process.
 
+This repository is the padring fork of Mauricio-xx/chipathon-2026-gf180mcu-padring (via wafer-space/gf180mcu-project-template), which adds a workshop slot mirroring JuanMoya/padring_gf180 as a native LibreLane slot. It contains the integrated chip-level design with padframe, the accelerator macro, and all LibreLane run outputs.
+
 ---
 ## Repository Structure
 
 ```
-├── Progress Tracker/            # Tracker for project progress
-├── Proposal/                    # Project proposal documents
-├── docs/                        # Documentation and reports
-├── core_rtl_design_verif/       # Ascon core's RTL design and verification
-├── core_synthesis               # Ascon core's Synthesis and post-synthesis verification
-├── core_physical_design         # Ascon core's Physical design
-├── final_src_cryptoaccel        # final chip top design files, with all the peripherals
-├── gds_cryptoaccel              # final chip top gds file 
-├── librelane_cryptoaccel        # final chip top librelane run summary and files
-├── LICENSE
-└── README.md
+Chipathon-2026-A10_Cryptoaccel/
+├── .github/                         
+│   ├── actions/
+│   │   ├── build_nix/               # Nix build action
+│   │   └── setup_nix/               # Nix setup action
+│   └── workflows/
+│       └── ci.yml                   # CI pipeline
+│
+├── cocotb/                       
+│   └── chip_top_tb.py
+│
+├── docs/                            # Documentation
+│   ├── reproducing-docker.md        # Docker-based reproduction guide
+│   ├── reproducing-native.md        # Native reproduction guide
+│   └── workshop-slot-spec.md        # Workshop slot specification
+│
+├── examples/                        # Example notebooks
+│   └── rtl2gds_chipathon_padring.ipynb
+│
+├── gds_Cryptoaccel/                 # GDS output files
+│   ├── gds_dry_run/
+│   │   ├── Readme.md
+│   │   └── spi_slave.klayout.gds    # Dry run GDS (KLayout)
+│   └── readme.md
+│
+├── ip/                              # Hard IP blocks 
+│   ├── gf180mcu_ws_ip__id/          
+│   │   ├── gds/
+│   │   ├── lef/
+│   │   ├── lib/
+│   │   └── vh/
+│   └── gf180mcu_ws_ip__logo/        
+│       ├── gds/
+│       ├── image/
+│       ├── lef/
+│       ├── lib/
+│       ├── script/
+│       └── vh/
+│
+├── librelane/                       # LibreLane padring integration config & runs
+│   ├── chip_top.sdc                 # Top-level timing constraints
+│   ├── config.yaml                  # LibreLane/OpenLane configuration
+│   ├── pdn_cfg.tcl                  # Power distribution network config
+│   ├── runs/                        # LibreLane run outputs
+│   │   ├── chip_top.klayout.gds     # Final integrated GDS
+│   │   ├── integration1.txt         # Integration run log
+│   │   └── metrics.csv              # Run metrics
+│   └── slots/                       # Slot definitions
+│       ├── slot_0p5x0p5.yaml
+│       ├── slot_0p5x1.yaml
+│       ├── slot_1x0p5.yaml
+│       ├── slot_1x1.yaml
+│       └── slot_workshop.yaml       
+│
+├── librelane_cryptoaccel/           # CryptoAccel standalone LibreLane run results
+│   ├── metrics.csv
+│   ├── readme.md
+│   └── run2_maxtran6_rerun.txt
+│
+├── macro/                           # Accelerator macro (spi_slave) collateral
+│   ├── gds/
+│   │   └── spi_slave.gds
+│   ├── lef/
+│   │   └── spi_slave.lef
+│   ├── lib/                         # Lib timing models (PVT corners)
+│   │   ├── max_ss_125C_3v00/
+│   │   ├── min_ff_n40C_3v60/
+│   │   └── nom_tt_025C_3v30/
+│   ├── nl/                          # Gate-level netlists
+│   │   ├── spi_slave.nl.v
+│   │   └── spi_slave.pnl.v
+│   ├── pnl/
+│   │   └── spi_slave.pnl.v
+│   ├── spef/                        # PEX
+│   │   ├── max/
+│   │   ├── min/
+│   │   └── nom/
+│   └── vh/
+│       └── spi_slave.vh
+│
+├── scripts/                         # Utility scripts
+│   ├── lay2img.py                   # Layout to image converter
+│   ├── padring.py                   # Padring generation script
+│   ├── run_docker_iic.sh            # Docker run script (IIC-OSIC)
+│   ├── run_native.sh                # Native run script
+│   └── verify_workshop_slot.sh      # Workshop slot verification
+│
+├── src/                             # Padring top-level RTL
+│   ├── chip_core.sv                 # Chip core wrapper
+│   ├── chip_top.sv                  # Top-level chip with padring
+│   ├── pad_map.svh                  # Pad mapping definitions
+│   └── slot_defines.svh             # Slot parameter definitions
+│
+├── src_cryptoaccel/                 # CryptoAccel RTL source & OpenLane config
+│   ├── ascon_core_adpt_encdec.v     # ASCON core (enc/dec state machine)
+│   ├── ascon_round_s1.v             # ASCON round stage 1
+│   ├── ascon_round_s2.v             # ASCON round stage 2
+│   ├── axi_ascon.v                  # AXI-Lite wrapper for ASCON
+│   ├── axi_master.v                 # AXI master interface
+│   ├── config_run2_maxtran6.yaml    # OpenLane run config
+│   ├── constraints_run2_maxtran6.sdc # Timing constraints
+│   ├── io.cfg                       # I/O configuration
+│   ├── readme.md
+│   ├── reset_sync.v                 # Reset synchronizer
+│   └── spi_slave.v                  # SPI slave top module
+│
+├── AUTHORS.md                       
+├── CREDITS.md                       
+├── LICENSE                          # License file
+├── Makefile                         # Build targets
+├── NOTICE                           
+├── README.md                        # This file
+├── flake.lock                       
+├── flake.nix                        
+├── info.yaml                        # Project info (LibreLane/Chipathon metadata) for layout round
+├── lvs_config.json                  # LVS configuration
+└── shell.nix                        
 ```
 <img width="2048" height="1473" alt="image" src="https://github.com/user-attachments/assets/420a6632-c3ed-4a0d-82ad-7331dc9077f0" style="width:50%;"/>
 
