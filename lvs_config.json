@@ -24,7 +24,7 @@
 		""
 	],
 	"LVS_VERILOG_FILES": [
-		""
+		"$UPRJ_ROOT/macro/pnl/spi_slave.pnl.v"
 	],
-	"LAYOUT_FILE": "$UPRJ_ROOT/gds_Cryptoaccel/gds_dry_run/spi_slave.klayout.gds"
+	"LAYOUT_FILE": "$UPRJ_ROOT/macro/gds/spi_slave.gds"
 }
