@@ -19,6 +19,10 @@ project:
   lvs_config: "lvs_config.json"
 
 pins:
+  - name: vss          # this gets connected to dvss_pads
+    io_type: ground
+  - name: vdd          # this gets connected to dvdd_pads
+    io_type: power
   - name: clk          # bidir[12].pad
     io_type: bidirectional_24ma
   - name: rst_n        # bidir[13].pad
@@ -31,7 +35,5 @@ pins:
     io_type: bidirectional_24ma
   - name: miso         # bidir[17].pad
     io_type: bidirectional_24ma
-  - name: vdd          # this gets connected to dvdd_pads
-    io_type: power
-  - name: vss          # this gets connected to dvss_pads
-    io_type: ground
+  
+  
