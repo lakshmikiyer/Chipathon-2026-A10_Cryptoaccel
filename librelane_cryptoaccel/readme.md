@@ -196,7 +196,7 @@ spi_slave (Top)
 | 74 | LVS Check | Checker | ✅ **0 errors** |
 | 75 | Setup Violations | Checker | ✅ **0 violations** |
 | 76 | Hold Violations | Checker | ✅ **0 violations** |
-| 77 | Max Slew Violations | Checker | ✅ **0 violations** |
+| 77 | Max Slew Violations | Checker | ⚠️ **318 violations** |
 | 78 | Max Cap Violations | Checker | ✅ **0 violations** |
 | 79 | Report Manufacturability | Misc | ✅ Final report |
 
