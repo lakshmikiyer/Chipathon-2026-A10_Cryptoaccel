@@ -213,7 +213,7 @@ spi_slave (Top)
 | **Worst Setup (ss_125C_3v00)** | Worst Slack | **+11.12 ns** |
 | **Worst Setup (ss_125C_3v00)** | TNS | **0 ns** |
 | **Worst Hold (min_ff_n40C_3v60)** | Worst Slack | **+0.013 ns** |
-| **Worst Hold (ss_125C_3v00)** | TNS | **0 ns** |
+| **Worst Hold (min_ff_n40C_3v60)** | TNS | **0 ns** |
 | **Clock Skew (worst setup)** | | +0.704 ns |
 | **Clock Skew (worst hold)** | | -0.689 ns |
 
