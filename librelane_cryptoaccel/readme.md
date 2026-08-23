@@ -36,7 +36,6 @@
 | **Hold Buffers** | 10 |
 | **Antenna Diode Cells** | inserted (63,362 µm² area) |
 | **Fill Cells** | inserted (294,317 µm² area) |
-| **Total Polygons in GDS** | 1,239,737 |
 
 ---
 
@@ -196,7 +195,7 @@ spi_slave (Top)
 | 74 | LVS Check | Checker | ✅ **0 errors** |
 | 75 | Setup Violations | Checker | ✅ **0 violations** |
 | 76 | Hold Violations | Checker | ✅ **0 violations** |
-| 77 | Max Slew Violations | Checker | ⚠️ **318 violations** |
+| 77 | Max Slew Violations | Checker | ⚠️ **318 violations (max_ss corner only)** |
 | 78 | Max Cap Violations | Checker | ✅ **0 violations** |
 | 79 | Report Manufacturability | Misc | ✅ Final report |
 
@@ -213,10 +212,10 @@ spi_slave (Top)
 |---|---|---|
 | **Worst Setup (ss_125C_3v00)** | Worst Slack | **+11.12 ns** |
 | **Worst Setup (ss_125C_3v00)** | TNS | **0 ns** |
-| **Worst Hold (ss_125C_3v00)** | Worst Slack | **+0.013 ns** |
+| **Worst Hold (min_ff_n40C_3v60)** | Worst Slack | **+0.013 ns** |
 | **Worst Hold (ss_125C_3v00)** | TNS | **0 ns** |
-| **Clock Skew (worst setup)** | | 0.704 ns |
-| **Clock Skew (worst hold)** | | 0.689 ns |
+| **Clock Skew (worst setup)** | | +0.704 ns |
+| **Clock Skew (worst hold)** | | -0.689 ns |
 
 > ✅ **All timing constraints met across all corners. Zero setup or hold violations.**
 
@@ -264,7 +263,7 @@ spi_slave (Top)
 | **Setup Timing** | OpenROAD STA | ✅ **+11.12 ns slack** |
 | **Hold Timing** | OpenROAD STA | ✅ **+0.013 ns slack** |
 | **Max Slew** | OpenROAD STA | ✅ **0 violations** |
-| **Max Capacitance** | OpenROAD STA | ✅ **0 violations** |
+| **Max Capacitance** | OpenROAD STA | ⚠️ **318 violations (max_ss corner only)** |
 | **Antenna** | OpenROAD | ✅ **0 violations** |
 | **Power Grid** | OpenROAD | ✅ **0 violations** |
 | **Disconnected Pins** | ODB | ✅ **0 disconnected** |
