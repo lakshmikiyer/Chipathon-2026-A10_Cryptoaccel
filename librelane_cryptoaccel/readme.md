@@ -262,8 +262,8 @@ spi_slave (Top)
 | **LVS** | Netgen | ✅ **LVS Clean** |
 | **Setup Timing** | OpenROAD STA | ✅ **+11.12 ns slack** |
 | **Hold Timing** | OpenROAD STA | ✅ **+0.013 ns slack** |
-| **Max Slew** | OpenROAD STA | ✅ **0 violations** |
-| **Max Capacitance** | OpenROAD STA | ⚠️ **318 violations (max_ss corner only)** |
+| **Max Slew** | OpenROAD STA | ⚠️ **318 violations (max_ss corner only)** |
+| **Max Capacitance** | OpenROAD STA | ✅ **0 violations** |
 | **Antenna** | OpenROAD | ✅ **0 violations** |
 | **Power Grid** | OpenROAD | ✅ **0 violations** |
 | **Disconnected Pins** | ODB | ✅ **0 disconnected** |
