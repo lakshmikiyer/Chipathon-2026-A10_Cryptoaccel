@@ -1,0 +1,29 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading OpenROAD database at '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/3-openroad-globalrouting/A10_A.odb'…
+Reading design constraints file at '/foss/designs/ascon_run_deffile/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_antennas gf180mcu_fd_sc_mcu7t5v0__antenna -iterations 10 -ratio_margin 10 -allow_congestion
+[INFO GRT-0012] Found 3 antenna violations.
+[INFO GRT-0302] Inserted 2 jumpers for 2 nets.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 2 diodes.
+[INFO GRT-0012] Found 0 antenna violations.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 8 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               7402   32497.74
+  Antenna cell                            155     680.51
+  Tie cell                                 43     377.57
+  Clock buffer                            393   11472.12
+  Timing Repair Buffer                   8569  122856.56
+  Inverter                                371    3284.02
+  Clock inverter                          137    2111.78
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  174237.41
+  Total                                 28251  542916.86
+Writing OpenROAD database to '/foss/designs/ascon_run_deffile/runs/run11/44-openroad-repairantennas/1-openroad-diodeinsertion/A10_A.odb'…
+Writing layout to '/foss/designs/ascon_run_deffile/runs/run11/44-openroad-repairantennas/1-openroad-diodeinsertion/A10_A.def'…

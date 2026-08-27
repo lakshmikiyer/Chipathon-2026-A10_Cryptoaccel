@@ -1,0 +1,33 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/A10_A.v" -match "Signal is not used: 'miso_IN'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/spi_slave.v" -match "Bits of signal are not used: 'rx_sr'[39]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/spi_slave.v" -match "Bits of signal are not used: 'frame_hold'[39]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_master.v" -match "Signal is not used: 'S_AXI_BRESP'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_master.v" -match "Signal is not used: 'S_AXI_RRESP'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Signal is not used: 'S_AXI_AWPROT'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Signal is not used: 'S_AXI_WSTRB'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Signal is not used: 'S_AXI_ARPROT'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Signal is not used: 'dout_b'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Signal is not used: 'dout_l'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Bits of signal are not used: 'awaddr_q'[1:0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/foss/designs/ascon_run_deffile/axi_ascon.v" -match "Bits of signal are not used: 'araddr_q'[1:0]*"
+

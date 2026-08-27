@@ -1,0 +1,51 @@
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Macro/Instance ┃ Power Pins ┃ Disconnected ┃ Signal Pins ┃ Disconnected ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ A10_A          │ VSS        │              │ clk_CS      │ miso_IN      │
+│                │ VDD        │              │ clk_IE      │              │
+│                │            │              │ clk_IN      │              │
+│                │            │              │ clk_OE      │              │
+│                │            │              │ clk_OUT     │              │
+│                │            │              │ clk_PD      │              │
+│                │            │              │ clk_PU      │              │
+│                │            │              │ clk_SL      │              │
+│                │            │              │ cs_n_CS     │              │
+│                │            │              │ cs_n_IE     │              │
+│                │            │              │ cs_n_IN     │              │
+│                │            │              │ cs_n_OE     │              │
+│                │            │              │ cs_n_OUT    │              │
+│                │            │              │ cs_n_PD     │              │
+│                │            │              │ cs_n_PU     │              │
+│                │            │              │ cs_n_SL     │              │
+│                │            │              │ miso_CS     │              │
+│                │            │              │ miso_IE     │              │
+│                │            │              │ miso_OE     │              │
+│                │            │              │ miso_OUT    │              │
+│                │            │              │ miso_PD     │              │
+│                │            │              │ miso_PU     │              │
+│                │            │              │ miso_SL     │              │
+│                │            │              │ mosi_CS     │              │
+│                │            │              │ mosi_IE     │              │
+│                │            │              │ mosi_IN     │              │
+│                │            │              │ mosi_OE     │              │
+│                │            │              │ mosi_OUT    │              │
+│                │            │              │ mosi_PD     │              │
+│                │            │              │ mosi_PU     │              │
+│                │            │              │ mosi_SL     │              │
+│                │            │              │ rst_n_CS    │              │
+│                │            │              │ rst_n_IE    │              │
+│                │            │              │ rst_n_IN    │              │
+│                │            │              │ rst_n_OE    │              │
+│                │            │              │ rst_n_OUT   │              │
+│                │            │              │ rst_n_PD    │              │
+│                │            │              │ rst_n_PU    │              │
+│                │            │              │ rst_n_SL    │              │
+│                │            │              │ sclk_CS     │              │
+│                │            │              │ sclk_IE     │              │
+│                │            │              │ sclk_IN     │              │
+│                │            │              │ sclk_OE     │              │
+│                │            │              │ sclk_OUT    │              │
+│                │            │              │ sclk_PD     │              │
+│                │            │              │ sclk_PU     │              │
+│                │            │              │ sclk_SL     │              │
+└────────────────┴────────────┴──────────────┴─────────────┴──────────────┘

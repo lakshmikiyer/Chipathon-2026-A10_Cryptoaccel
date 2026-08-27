@@ -1,0 +1,11 @@
+{
+	"design_powergrid__voltage__worst__net:VDD__corner:max_ss_125C_3v00": 2.98876,
+	"design_powergrid__drop__average__net:VDD__corner:max_ss_125C_3v00": 2.99093,
+	"design_powergrid__drop__worst__net:VDD__corner:max_ss_125C_3v00": 0.0112369,
+	"design_powergrid__voltage__worst__net:VSS__corner:max_ss_125C_3v00": 0.0123861,
+	"design_powergrid__drop__average__net:VSS__corner:max_ss_125C_3v00": 0.0101767,
+	"design_powergrid__drop__worst__net:VSS__corner:max_ss_125C_3v00": 0.0123861,
+	"flow__warnings__count": 0,
+	"flow__errors__count": 0,
+	"flow__warnings__type_count": 0
+}

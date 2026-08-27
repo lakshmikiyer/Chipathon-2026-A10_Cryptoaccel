@@ -1,0 +1,53 @@
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/A10_A.v:18:12: Signal is not used: 'miso_IN'
+                                                                    : ... note: In instance 'A10_A'
+   18 |     input  miso_IN
+      |            ^~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.046
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/spi_slave.v:43:17: Bits of signal are not used: 'rx_sr'[39]
+                                                                        : ... note: In instance 'A10_A.u_core'
+   43 |     reg  [39:0] rx_sr;       
+      |                 ^~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/spi_slave.v:45:17: Bits of signal are not used: 'frame_hold'[39]
+                                                                        : ... note: In instance 'A10_A.u_core'
+   45 |     reg  [39:0] frame_hold;  
+      |                 ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_master.v:39:12: Signal is not used: 'S_AXI_BRESP'
+                                                                         : ... note: In instance 'A10_A.u_core.u_master'
+   39 | wire [1:0] S_AXI_BRESP , S_AXI_RRESP;
+      |            ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_master.v:39:26: Signal is not used: 'S_AXI_RRESP'
+                                                                         : ... note: In instance 'A10_A.u_core.u_master'
+   39 | wire [1:0] S_AXI_BRESP , S_AXI_RRESP;
+      |                          ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:34:24: Signal is not used: 'S_AXI_AWPROT'
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   34 |     input  wire [2:0]  S_AXI_AWPROT,
+      |                        ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:39:24: Signal is not used: 'S_AXI_WSTRB'
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   39 |     input  wire [3:0]  S_AXI_WSTRB,
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:48:24: Signal is not used: 'S_AXI_ARPROT'
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   48 |     input  wire [2:0]  S_AXI_ARPROT,
+      |                        ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:70:17: Signal is not used: 'dout_b'
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   70 |     reg [4:0]   dout_b;        
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:71:17: Signal is not used: 'dout_l'
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   71 |     reg         dout_l;
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:76:16: Bits of signal are not used: 'awaddr_q'[1:0]
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   76 |     reg [6:0]  awaddr_q, araddr_q;
+      |                ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /foss/designs/ascon_run_deffile/axi_ascon.v:76:26: Bits of signal are not used: 'araddr_q'[1:0]
+                                                                        : ... note: In instance 'A10_A.u_core.u_master.u_slave'
+   76 |     reg [6:0]  awaddr_q, araddr_q;
+      |                          ^~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.046 2026-02-28 rev v5.046
+- Verilator: Built from 1.211 MB sources in 307 modules, into 0.222 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.416 s (elab=0.008, cvt=0.015, bld=0.000); cpu 0.058 s on 1 threads; allocated 36.578 MB

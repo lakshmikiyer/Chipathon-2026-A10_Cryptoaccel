@@ -1,0 +1,72 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading OpenROAD database at '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.odb'…
+Reading design constraints file at '/foss/designs/ascon_run_deffile/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose -allow_congestion
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 348 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 29
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical       250586        166930          33.38%
+Metal3     Horizontal     256076        170631          33.37%
+Metal4     Vertical       245622        163704          33.35%
+Metal5     Horizontal     151973        101665          33.10%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 106554
+[INFO GRT-0198] Via related Steiner nodes: 2564
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 134476
+[INFO GRT-0112] Final usage 3D: 527802
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2          166930         61601           36.90%             0 /  0 /  0
+Metal3          170631         57621           33.77%             0 /  0 /  0
+Metal4          163704          3870            2.36%             0 /  0 /  0
+Metal5          101665          1282            1.26%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           602930        124374           20.63%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1469034 um
+[INFO GRT-0014] Routed nets: 19971
+[INFO GRT-0303] Global routing runtime = 00:00:01
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               7402   32497.74
+  Antenna cell                              5      21.95
+  Tie cell                                 43     377.57
+  Clock buffer                            393   11472.12
+  Timing Repair Buffer                   8569  122856.56
+  Inverter                                371    3284.02
+  Clock inverter                          137    2111.78
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  174237.41
+  Total                                 28101  542258.30
+Writing OpenROAD database to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/3-openroad-globalrouting/A10_A.odb'…
+Writing layout to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/3-openroad-globalrouting/A10_A.def'…

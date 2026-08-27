@@ -1,0 +1,40 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading OpenROAD database at '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/1-odb-fuzzydiodeplacement/A10_A.odb'…
+Reading design constraints file at '/foss/designs/ascon_run_deffile/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        581.3 u
+average displacement        0.0 u
+max displacement           15.1 u
+original HPWL          976969.8 u
+legalized HPWL        1001070.2 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 9421 instances
+[INFO DPL-0021] HPWL before          1001070.2 u
+[INFO DPL-0022] HPWL after           977033.6 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 592 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               7402   32497.74
+  Antenna cell                            153     671.73
+  Tie cell                                 43     377.57
+  Clock buffer                            393   11472.12
+  Timing Repair Buffer                   8569  122856.56
+  Inverter                                371    3284.02
+  Clock inverter                          137    2111.78
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  174237.41
+  Total                                 28249  542908.08
+Writing OpenROAD database to '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_A.odb'…
+Writing netlist to '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_A.nl.v'…
+Writing powered netlist to '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_A.pnl.v'…
+Writing layout to '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_A.def'…
+Writing timing constraints to '/foss/designs/ascon_run_deffile/runs/run11/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_A.sdc'…

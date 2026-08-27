@@ -1,0 +1,52 @@
+146. Printing statistics.
+
+=== A10_A ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+    11057        - wires
+    11057        - wire bits
+     2632        - public wires
+     2632        - public wire bits
+       48        - ports
+       48        - port bits
+    11051  3.7E+05 cells
+       86 1.51E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       68 1.49E+03   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       28  676.122   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       41  900.032   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      609 1.07E+04   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       75  1811.04   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+      142 4.36E+03   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      368 7.27E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+      371 3.26E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       89 6.64E+03   gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1
+     2494 1.86E+05   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        2  158.054   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+     1198 3.94E+04   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+     1885 2.07E+04   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      111  1705.67   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       24  474.163   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      575  7573.44   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       60 1.05E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       32  702.464   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+      283 6.21E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      797  1.4E+04   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       64 1.69E+03   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       67 1.47E+03   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       70 1.69E+03   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       17  447.821   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+      122 2.14E+03   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__tieh
+       35  307.328   gf180mcu_fd_sc_mcu7t5v0__tiel
+      116 3.31E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       14  737.587   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      804 2.12E+04   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+      387 1.95E+04   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\A10_A': 369570.700800
+     of which used for sequential elements: 192944.908800 (52.21%)
+

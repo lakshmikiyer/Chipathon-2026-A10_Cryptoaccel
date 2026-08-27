@@ -1,0 +1,28 @@
+12 Lint warnings found.
+[IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.160, 23.520).
+Bterm VSS is declared as a 'GROUND' pin. It will be ignored.
+Bterm VDD is declared as a 'POWER' pin. It will be ignored.
+VDD not found in template layout, but found in design layout.
+VSS not found in template layout, but found in design layout.
+The die area specificied in FP_DEF_TEMPLATE is different than the design die area. Pin placement may be incorrect.
+Design area: 0.0 0.0 1110.0 1110.0. Template def area: 0.0 0.0 11100.0 11100.0
+[GRT-0281] Net clk_IN has a large fanout of 2457 terminals.
+[GRT-0281] Net u_core.rst_n_clk has a large fanout of 2455 terminals.
+[RSZ-0065] max wire length less than 28858u increases wire delays.
+[RSZ-0020] found 2 floating nets.
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+Cell 'A10_A' has (1) input pin(s) without antenna gate information. They might not be connected to a gate.
+KLAYOUT_DRC_RUNSET is unset. KLayout.DRC may not be supported for the gf180mcuD PDK. This step will be skipped.
+The KLayout DRC errors metric was not found. Are you sure the relevant step was run?
+Max Slew violations found in the following corners:
+* max_ss_125C_3v00
+klayout__drc_error__count not reported. KLayout.DRC may have been skipped.

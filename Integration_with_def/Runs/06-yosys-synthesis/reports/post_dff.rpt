@@ -1,0 +1,42 @@
+138. Printing statistics.
+
+=== A10_A ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     7616        - wires
+    11686        - wire bits
+      168        - public wires
+     3493        - public wire bits
+       48        - ports
+       48        - port bits
+    11346 1.93E+05 cells
+     1724        -   $_ANDNOT_
+      178        -   $_AND_
+     3599        -   $_MUX_
+       84        -   $_NAND_
+       33        -   $_NOR_
+      309        -   $_NOT_
+      127        -   $_ORNOT_
+      812        -   $_OR_
+      843        -   $_XNOR_
+     1052        -   $_XOR_
+       89 6.64E+03   gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1
+     2494 1.86E+05   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        2  158.054   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\A10_A': 192944.908800
+     of which used for sequential elements: 192944.908800 (100.00%)
+

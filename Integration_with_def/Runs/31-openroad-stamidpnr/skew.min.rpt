@@ -1,0 +1,23 @@
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+Writing metric clock__skew__worst_hold__corner:max_ss_125C_3v00: -1.0505414613355384
+======================= max_ss_125C_3v00 Corner ===================================
+
+Clock clk_IN
+0.085574 source latency _17033_/CLK ^
+-0.636115 target latency _17136_/CLK ^
+-0.500000 clock uncertainty
+0.000000 CRPR
+--------------
+-1.050542 hold skew
+
+Clock sclk_IN
+0.009040 source latency _16856_/CLK ^
+-0.028364 target latency _16933_/CLK ^
+-0.500000 clock uncertainty
+0.000000 CRPR
+--------------
+-0.519324 hold skew
+

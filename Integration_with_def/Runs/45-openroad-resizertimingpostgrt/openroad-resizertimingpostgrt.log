@@ -1,0 +1,151 @@
+Reading timing models for corner min_ff_n40C_3v60…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading OpenROAD database at '/foss/designs/ascon_run_deffile/runs/run11/44-openroad-repairantennas/1-openroad-diodeinsertion/A10_A.odb'…
+Reading design constraints file at '/foss/designs/ascon_run_deffile/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose -allow_congestion
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 348 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 34
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical       250586        166930          33.38%
+Metal3     Horizontal     256076        170631          33.37%
+Metal4     Vertical       245622        163704          33.35%
+Metal5     Horizontal     151973        101665          33.10%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 109331
+[INFO GRT-0198] Via related Steiner nodes: 2641
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 139029
+[INFO GRT-0112] Final usage 3D: 543994
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2          166930         61884           37.07%             0 /  0 /  0
+Metal3          170631         59805           35.05%             0 /  0 /  0
+Metal4          163704          3682            2.25%             0 /  0 /  0
+Metal5          101665          1536            1.51%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           602930        126907           21.05%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1503709 um
+[INFO GRT-0014] Routed nets: 19971
+[INFO GRT-0303] Global routing runtime = 00:00:01
++ repair_timing -verbose -setup -setup_margin 0.5 -max_buffer_percent 50
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.5 -hold_margin 0.5 -max_buffer_percent 75
+[INFO RSZ-0046] Found 4 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |   0.499 |   0.000 | _17002_/D
+    final |       0 |       4 |            0 |    +0.0% |   0.501 |   0.000 | _18197_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 4 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        118.2 u
+average displacement        0.0 u
+max displacement           14.6 u
+original HPWL         1001090.8 u
+legalized HPWL        1001142.5 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 9424 instances
+[INFO DPL-0021] HPWL before          1001142.5 u
+[INFO DPL-0022] HPWL after           977100.8 u
+[INFO DPL-0023] HPWL delta               -2.4 %
++ global_route -congestion_iterations 50 -verbose -allow_congestion
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 348 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 34
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical       250586        166930          33.38%
+Metal3     Horizontal     256076        170631          33.37%
+Metal4     Vertical       245622        163704          33.35%
+Metal5     Horizontal     151973        101665          33.10%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 106790
+[INFO GRT-0198] Via related Steiner nodes: 2564
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 134782
+[INFO GRT-0112] Final usage 3D: 528828
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2          166930         61668           36.94%             0 /  0 /  0
+Metal3          170631         57733           33.83%             0 /  0 /  0
+Metal4          163704          3853            2.35%             0 /  0 /  0
+Metal5          101665          1228            1.21%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           602930        124482           20.65%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1471268 um
+[INFO GRT-0014] Routed nets: 19975
+[INFO GRT-0303] Global routing runtime = 00:00:01
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 16 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               7402   32497.74
+  Antenna cell                            155     680.51
+  Tie cell                                 43     377.57
+  Clock buffer                            393   11472.12
+  Timing Repair Buffer                   8573  122909.25
+  Inverter                                371    3284.02
+  Clock inverter                          137    2111.78
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  174237.41
+  Total                                 28255  542969.55
+Writing OpenROAD database to '/foss/designs/ascon_run_deffile/runs/run11/45-openroad-resizertimingpostgrt/A10_A.odb'…
+Writing netlist to '/foss/designs/ascon_run_deffile/runs/run11/45-openroad-resizertimingpostgrt/A10_A.nl.v'…
+Writing powered netlist to '/foss/designs/ascon_run_deffile/runs/run11/45-openroad-resizertimingpostgrt/A10_A.pnl.v'…
+Writing layout to '/foss/designs/ascon_run_deffile/runs/run11/45-openroad-resizertimingpostgrt/A10_A.def'…
+Writing timing constraints to '/foss/designs/ascon_run_deffile/runs/run11/45-openroad-resizertimingpostgrt/A10_A.sdc'…

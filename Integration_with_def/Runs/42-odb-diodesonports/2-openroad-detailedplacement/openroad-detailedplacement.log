@@ -1,0 +1,40 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading OpenROAD database at '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/1-odb-portdiodeplacement/A10_A.odb'…
+Reading design constraints file at '/foss/designs/ascon_run_deffile/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement         21.8 u
+average displacement        0.0 u
+max displacement            5.6 u
+original HPWL          976930.9 u
+legalized HPWL        1000991.4 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 9408 instances
+[INFO DPL-0021] HPWL before          1000991.4 u
+[INFO DPL-0022] HPWL after           976942.3 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 20 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               7402   32497.74
+  Antenna cell                              5      21.95
+  Tie cell                                 43     377.57
+  Clock buffer                            393   11472.12
+  Timing Repair Buffer                   8569  122856.56
+  Inverter                                371    3284.02
+  Clock inverter                          137    2111.78
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  174237.41
+  Total                                 28101  542258.30
+Writing OpenROAD database to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.odb'…
+Writing netlist to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.nl.v'…
+Writing powered netlist to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.pnl.v'…
+Writing layout to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.def'…
+Writing timing constraints to '/foss/designs/ascon_run_deffile/runs/run11/42-odb-diodesonports/2-openroad-detailedplacement/A10_A.sdc'…

@@ -1,0 +1,978 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/runs/run11/tmp/12840e9528c94445956acbcfd4dcfdb9.bb.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/runs/run11/tmp/12840e9528c94445956acbcfd4dcfdb9.bb.v' to AST representation.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__antenna'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__antenna_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__endcap'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__endcap_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_32'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_64'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_32'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_64'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__filltie'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__filltie_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__hold'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__hold_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tieh'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tieh_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tiel'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tiel_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_func'.
+Successfully finished Verilog frontend.
+wtaf
+
+2. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/reset_sync.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/reset_sync.v' to AST representation.
+Storing AST representation for module `$abstract\reset_sync'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/ascon_round_s1.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/ascon_round_s1.v' to AST representation.
+Storing AST representation for module `$abstract\ascon_round_s1'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/ascon_round_s2.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/ascon_round_s2.v' to AST representation.
+Storing AST representation for module `$abstract\ascon_round_s2'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v' to AST representation.
+Storing AST representation for module `$abstract\ascon_core_adpt_encdec'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/axi_ascon.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/axi_ascon.v' to AST representation.
+Storing AST representation for module `$abstract\axi_ascon'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/axi_master.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/axi_master.v' to AST representation.
+Storing AST representation for module `$abstract\axi_master'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/spi_slave.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/spi_slave.v' to AST representation.
+Storing AST representation for module `$abstract\spi_slave'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /foss/designs/ascon_run_deffile/A10_A.v
+Parsing SystemVerilog input from `/foss/designs/ascon_run_deffile/A10_A.v' to AST representation.
+Storing AST representation for module `$abstract\A10_A'.
+Successfully finished Verilog frontend.
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+11. Executing AST frontend in derive mode using pre-parsed AST for module `\A10_A'.
+Generating RTLIL representation for module `\A10_A'.
+
+11.1. Analyzing design hierarchy..
+Top module:  \A10_A
+
+11.2. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_slave'.
+Generating RTLIL representation for module `\spi_slave'.
+
+11.3. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+
+11.4. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_master'.
+Generating RTLIL representation for module `\axi_master'.
+
+11.5. Executing AST frontend in derive mode using pre-parsed AST for module `\reset_sync'.
+Generating RTLIL representation for module `\reset_sync'.
+
+11.6. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+Used module:         \axi_master
+Used module:         \reset_sync
+
+11.7. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_ascon'.
+Generating RTLIL representation for module `\axi_ascon'.
+
+11.8. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+Used module:         \axi_master
+Used module:             \axi_ascon
+Used module:         \reset_sync
+
+11.9. Executing AST frontend in derive mode using pre-parsed AST for module `\ascon_core_adpt_encdec'.
+Generating RTLIL representation for module `\ascon_core_adpt_encdec'.
+
+11.10. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+Used module:         \axi_master
+Used module:             \axi_ascon
+Used module:                 \ascon_core_adpt_encdec
+Used module:         \reset_sync
+
+11.11. Executing AST frontend in derive mode using pre-parsed AST for module `\ascon_round_s2'.
+Generating RTLIL representation for module `\ascon_round_s2'.
+
+11.12. Executing AST frontend in derive mode using pre-parsed AST for module `\ascon_round_s1'.
+Generating RTLIL representation for module `\ascon_round_s1'.
+
+11.13. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+Used module:         \axi_master
+Used module:             \axi_ascon
+Used module:                 \ascon_core_adpt_encdec
+Used module:                     \ascon_round_s2
+Used module:                     \ascon_round_s1
+Used module:         \reset_sync
+
+11.14. Analyzing design hierarchy..
+Top module:  \A10_A
+Used module:     \spi_slave
+Used module:         \axi_master
+Used module:             \axi_ascon
+Used module:                 \ascon_core_adpt_encdec
+Used module:                     \ascon_round_s2
+Used module:                     \ascon_round_s1
+Used module:         \reset_sync
+Removing unused module `$abstract\A10_A'.
+Removing unused module `$abstract\spi_slave'.
+Removing unused module `$abstract\axi_master'.
+Removing unused module `$abstract\axi_ascon'.
+Removing unused module `$abstract\ascon_core_adpt_encdec'.
+Removing unused module `$abstract\ascon_round_s2'.
+Removing unused module `$abstract\ascon_round_s1'.
+Removing unused module `$abstract\reset_sync'.
+Removed 8 unused modules.
+Renaming module A10_A to A10_A.
+
+12. Executing PROC pass (convert processes to netlists).
+
+12.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225 in module ascon_core_adpt_encdec.
+Marked 48 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112 in module ascon_core_adpt_encdec.
+Marked 32 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71 in module ascon_core_adpt_encdec.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:65$70 in module ascon_core_adpt_encdec.
+Marked 5 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41 in module axi_ascon.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32 in module reset_sync.
+Marked 3 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27 in module axi_master.
+Marked 3 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23 in module spi_slave.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19 in module spi_slave.
+Marked 4 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14 in module spi_slave.
+Marked 2 switch rules as full_case in process $proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4 in module spi_slave.
+Removed a total of 0 dead cases.
+
+12.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 19 redundant assignments.
+Promoted 51 assignments to connections.
+
+12.4. Executing PROC_INIT pass (extract init attributes).
+
+12.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+Found async reset \S_AXI_ARESETN in `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+Found async reset \arst_n in `\reset_sync.$proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32'.
+Found async reset \rstn in `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+Found async reset \rst_n_clk in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+Found async reset \rst_n_clk in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+Found async reset \rst_n_spi in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+Found async reset \rst_n_spi in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+
+12.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 1 switch.
+<suppressed ~128 debug messages>
+
+12.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+     1/30: $0\dout_valid[0:0]
+     2/30: $0\done[0:0]
+     3/30: $0\din_bytes_q[4:0]
+     4/30: $0\din_last_q[0:0]
+     5/30: $0\full_nS1_q[63:0]
+     6/30: $0\full_nS0_q[63:0]
+     7/30: $0\full_dout_q[127:0]
+     8/30: $0\last_dout_q[127:0]
+     9/30: $0\last_nrate_q[127:0]
+    10/30: $0\ph[0:0]
+    11/30: $0\B0[63:0]
+    12/30: $0\ci[3:0]
+    13/30: $0\ret_st[3:0]
+    14/30: $0\t1_out[63:0]
+    15/30: $0\t0_out[63:0]
+    16/30: $0\auth_ok[0:0]
+    17/30: $0\busy[0:0]
+    18/30: $0\dout_bytes[4:0]
+    19/30: $0\dout_data[127:0]
+    20/30: $0\dout_last[0:0]
+    21/30: $0\st[3:0]
+    22/30: $0\S0[63:0]
+    23/30: $0\S4[63:0]
+    24/30: $0\S3[63:0]
+    25/30: $0\S2[63:0]
+    26/30: $0\S1[63:0]
+    27/30: $0\B4[63:0]
+    28/30: $0\B3[63:0]
+    29/30: $0\B2[63:0]
+    30/30: $0\B1[63:0]
+Creating decoders for process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+     1/48: $32\last_nrate[127:120]
+     2/48: $31\last_nrate[127:120]
+     3/48: $16\last_dout[127:120]
+     4/48: $30\last_nrate[119:112]
+     5/48: $29\last_nrate[119:112]
+     6/48: $15\last_dout[119:112]
+     7/48: $28\last_nrate[111:104]
+     8/48: $27\last_nrate[111:104]
+     9/48: $14\last_dout[111:104]
+    10/48: $26\last_nrate[103:96]
+    11/48: $25\last_nrate[103:96]
+    12/48: $13\last_dout[103:96]
+    13/48: $24\last_nrate[95:88]
+    14/48: $23\last_nrate[95:88]
+    15/48: $12\last_dout[95:88]
+    16/48: $22\last_nrate[87:80]
+    17/48: $21\last_nrate[87:80]
+    18/48: $11\last_dout[87:80]
+    19/48: $20\last_nrate[79:72]
+    20/48: $19\last_nrate[79:72]
+    21/48: $10\last_dout[79:72]
+    22/48: $18\last_nrate[71:64]
+    23/48: $17\last_nrate[71:64]
+    24/48: $9\last_dout[71:64]
+    25/48: $16\last_nrate[63:56]
+    26/48: $15\last_nrate[63:56]
+    27/48: $8\last_dout[63:56]
+    28/48: $14\last_nrate[55:48]
+    29/48: $13\last_nrate[55:48]
+    30/48: $7\last_dout[55:48]
+    31/48: $12\last_nrate[47:40]
+    32/48: $11\last_nrate[47:40]
+    33/48: $6\last_dout[47:40]
+    34/48: $10\last_nrate[39:32]
+    35/48: $9\last_nrate[39:32]
+    36/48: $5\last_dout[39:32]
+    37/48: $8\last_nrate[31:24]
+    38/48: $7\last_nrate[31:24]
+    39/48: $4\last_dout[31:24]
+    40/48: $6\last_nrate[23:16]
+    41/48: $5\last_nrate[23:16]
+    42/48: $3\last_dout[23:16]
+    43/48: $4\last_nrate[15:8]
+    44/48: $3\last_nrate[15:8]
+    45/48: $2\last_dout[15:8]
+    46/48: $2\last_nrate[7:0]
+    47/48: $1\last_nrate[7:0]
+    48/48: $1\last_dout[7:0]
+Creating decoders for process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71'.
+     1/32: $32\ad_pad[127:120]
+     2/32: $31\ad_pad[127:120]
+     3/32: $30\ad_pad[119:112]
+     4/32: $29\ad_pad[119:112]
+     5/32: $28\ad_pad[111:104]
+     6/32: $27\ad_pad[111:104]
+     7/32: $26\ad_pad[103:96]
+     8/32: $25\ad_pad[103:96]
+     9/32: $24\ad_pad[95:88]
+    10/32: $23\ad_pad[95:88]
+    11/32: $22\ad_pad[87:80]
+    12/32: $21\ad_pad[87:80]
+    13/32: $20\ad_pad[79:72]
+    14/32: $19\ad_pad[79:72]
+    15/32: $18\ad_pad[71:64]
+    16/32: $17\ad_pad[71:64]
+    17/32: $16\ad_pad[63:56]
+    18/32: $15\ad_pad[63:56]
+    19/32: $14\ad_pad[55:48]
+    20/32: $13\ad_pad[55:48]
+    21/32: $12\ad_pad[47:40]
+    22/32: $11\ad_pad[47:40]
+    23/32: $10\ad_pad[39:32]
+    24/32: $9\ad_pad[39:32]
+    25/32: $8\ad_pad[31:24]
+    26/32: $7\ad_pad[31:24]
+    27/32: $6\ad_pad[23:16]
+    28/32: $5\ad_pad[23:16]
+    29/32: $4\ad_pad[15:8]
+    30/32: $3\ad_pad[15:8]
+    31/32: $2\ad_pad[7:0]
+    32/32: $1\ad_pad[7:0]
+Creating decoders for process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:65$70'.
+     1/1: $1\rcon[7:0]
+Creating decoders for process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+     1/47: $0\S_AXI_ARREADY[0:0]
+     2/47: $0\S_AXI_WREADY[0:0]
+     3/47: $0\S_AXI_AWREADY[0:0]
+     4/47: $0\start_pulse[0:0]
+     5/47: $0\wdata_q[31:0]
+     6/47: $0\araddr_q[6:0]
+     7/47: $0\awaddr_q[6:0]
+     8/47: $0\ar_hs[0:0]
+     9/47: $0\w_hs[0:0]
+    10/47: $0\aw_hs[0:0]
+    11/47: $0\tagr3[31:0]
+    12/47: $0\tagr2[31:0]
+    13/47: $0\tagr1[31:0]
+    14/47: $0\tagr0[31:0]
+    15/47: $0\dout_l[0:0]
+    16/47: $0\dout_b[4:0]
+    17/47: $0\dout_sh[127:0]
+    18/47: $0\authok_q[0:0]
+    19/47: $0\done_sticky[0:0]
+    20/47: $0\dout_pending[0:0]
+    21/47: $0\blk_pending[0:0]
+    22/47: $0\blk_bytes[4:0]
+    23/47: $0\blk_last[0:0]
+    24/47: $0\blk_sel[0:0]
+    25/47: $0\adempty_q[0:0]
+    26/47: $0\dec_q[0:0]
+    27/47: $0\blk3[31:0]
+    28/47: $0\blk2[31:0]
+    29/47: $0\blk1[31:0]
+    30/47: $0\blk0[31:0]
+    31/47: $0\tagw3[31:0]
+    32/47: $0\tagw2[31:0]
+    33/47: $0\tagw1[31:0]
+    34/47: $0\tagw0[31:0]
+    35/47: $0\non3[31:0]
+    36/47: $0\non2[31:0]
+    37/47: $0\non1[31:0]
+    38/47: $0\non0[31:0]
+    39/47: $0\key3[31:0]
+    40/47: $0\key2[31:0]
+    41/47: $0\key1[31:0]
+    42/47: $0\key0[31:0]
+    43/47: $0\S_AXI_RVALID[0:0]
+    44/47: $0\S_AXI_RDATA[31:0]
+    45/47: $0\S_AXI_BVALID[0:0]
+    46/47: $0\S_AXI_RRESP[1:0]
+    47/47: $0\S_AXI_BRESP[1:0]
+Creating decoders for process `\reset_sync.$proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32'.
+     1/2: $0\s[0:0]
+     2/2: $0\m[0:0]
+Creating decoders for process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+     1/14: $0\cmd_done[0:0]
+     2/14: $0\st[2:0]
+     3/14: $0\m_rready[0:0]
+     4/14: $0\m_arvalid[0:0]
+     5/14: $0\m_arprot[2:0]
+     6/14: $0\m_araddr[6:0]
+     7/14: $0\m_bready[0:0]
+     8/14: $0\m_wvalid[0:0]
+     9/14: $0\m_wstrb[3:0]
+    10/14: $0\m_wdata[31:0]
+    11/14: $0\m_awvalid[0:0]
+    12/14: $0\m_awprot[2:0]
+    13/14: $0\m_awaddr[6:0]
+    14/14: $0\cmd_rdata[31:0]
+Creating decoders for process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+     1/6: $0\cmd_wdata_q[31:0]
+     2/6: $0\cmd_addr_q[6:0]
+     3/6: $0\cmd_write[0:0]
+     4/6: $0\cmd_valid[0:0]
+     5/6: $0\cst[1:0]
+     6/6: $0\rd_data_clk[31:0]
+Creating decoders for process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+     1/6: $0\w2[0:0]
+     2/6: $0\w1[0:0]
+     3/6: $0\w0[0:0]
+     4/6: $0\r2[0:0]
+     5/6: $0\r1[0:0]
+     6/6: $0\r0[0:0]
+Creating decoders for process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+     1/3: $0\miso[0:0]
+     2/3: $0\txcnt[5:0]
+     3/3: $0\miso_sr[31:0]
+Creating decoders for process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+     1/7: $0\bitcnt[5:0]
+     2/7: $0\rx_sr[39:0]
+     3/7: $0\rreq_tgl[0:0]
+     4/7: $0\wreq_tgl[0:0]
+     5/7: $0\rd_addr_s[6:0]
+     6/7: $0\is_read[0:0]
+     7/7: $0\frame_hold[39:0]
+
+12.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ascon_core_adpt_encdec.\last_dout' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+No latch inferred for signal `\ascon_core_adpt_encdec.\last_nrate' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+No latch inferred for signal `\ascon_core_adpt_encdec.\di' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+No latch inferred for signal `\ascon_core_adpt_encdec.\ad_pad' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71'.
+No latch inferred for signal `\ascon_core_adpt_encdec.\ai' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71'.
+No latch inferred for signal `\ascon_core_adpt_encdec.\rcon' from process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:65$70'.
+
+12.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ascon_core_adpt_encdec.\B1' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1682' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\B2' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1687' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\B3' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1692' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\B4' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1697' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\S1' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1702' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\S2' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1707' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\S3' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1712' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\S4' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1717' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\S0' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1722' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\st' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1727' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\dout_valid' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1732' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\dout_last' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1737' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\dout_data' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1742' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\dout_bytes' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1747' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\busy' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1752' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\done' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1757' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\auth_ok' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1762' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\t0_out' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1767' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\t1_out' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1772' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\ret_st' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1777' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\ci' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1782' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\B0' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1787' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\ph' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1792' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\last_nrate_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1797' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\last_dout_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1802' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\full_dout_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1807' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\full_nS0_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1812' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\full_nS1_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1817' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\din_last_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1822' with positive edge clock and positive level reset.
+Creating register for signal `\ascon_core_adpt_encdec.\din_bytes_q' using process `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+  created $adff cell `$procdff$1827' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_BRESP' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1832' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_RRESP' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1837' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_AWREADY' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1842' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_WREADY' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1847' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_BVALID' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1852' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_ARREADY' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1857' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_RDATA' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1862' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\S_AXI_RVALID' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1867' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\key0' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1872' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\key1' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1877' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\key2' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1882' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\key3' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1887' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\non0' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1892' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\non1' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1897' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\non2' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1902' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\non3' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1907' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagw0' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1912' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagw1' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1917' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagw2' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1922' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagw3' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1927' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk0' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1932' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk1' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1937' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk2' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1942' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk3' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1947' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\dec_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1952' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\adempty_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1957' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk_sel' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1962' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk_last' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1967' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk_bytes' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1972' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\start_pulse' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1977' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\blk_pending' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1982' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\dout_pending' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1987' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\done_sticky' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1992' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\authok_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$1997' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\dout_sh' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2002' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\dout_b' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2007' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\dout_l' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2012' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagr0' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2017' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagr1' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2022' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagr2' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2027' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\tagr3' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2032' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\aw_hs' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2037' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\w_hs' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2042' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\ar_hs' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2047' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\awaddr_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2052' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\araddr_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2057' with positive edge clock and positive level reset.
+Creating register for signal `\axi_ascon.\wdata_q' using process `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+  created $adff cell `$procdff$2062' with positive edge clock and positive level reset.
+Creating register for signal `\reset_sync.\m' using process `\reset_sync.$proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32'.
+  created $adff cell `$procdff$2067' with positive edge clock and positive level reset.
+Creating register for signal `\reset_sync.\s' using process `\reset_sync.$proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32'.
+  created $adff cell `$procdff$2072' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\cmd_done' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2077' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\cmd_rdata' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2082' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_awaddr' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2087' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_awprot' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2092' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_awvalid' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2097' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_wdata' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2102' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_wstrb' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2107' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_wvalid' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2112' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_bready' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2117' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_araddr' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2122' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_arprot' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2127' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_arvalid' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2132' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\m_rready' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2137' with positive edge clock and positive level reset.
+Creating register for signal `\axi_master.\st' using process `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+  created $adff cell `$procdff$2142' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\rd_data_clk' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2147' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\cst' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2152' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\cmd_valid' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2157' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\cmd_write' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2162' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\cmd_addr_q' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2167' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\cmd_wdata_q' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+  created $adff cell `$procdff$2172' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\r0' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2177' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\r1' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2182' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\r2' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2187' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\w0' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2192' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\w1' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2197' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\w2' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+  created $adff cell `$procdff$2202' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\miso' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+  created $adff cell `$procdff$2207' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\txcnt' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+  created $adff cell `$procdff$2212' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\miso_sr' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+  created $adff cell `$procdff$2217' with positive edge clock and positive level reset.
+Creating register for signal `\spi_slave.\rx_sr' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2222' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\bitcnt' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2227' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\frame_hold' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2232' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\is_read' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2237' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\rd_addr_s' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2242' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\wreq_tgl' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2247' with negative edge clock and positive level reset.
+Creating register for signal `\spi_slave.\rreq_tgl' using process `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+  created $adff cell `$procdff$2252' with negative edge clock and positive level reset.
+
+12.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+12.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 8 empty switches in `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+Removing empty process `ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:123$225'.
+Found and cleaned up 48 empty switches in `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+Removing empty process `ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:98$112'.
+Found and cleaned up 32 empty switches in `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71'.
+Removing empty process `ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:77$71'.
+Found and cleaned up 1 empty switch in `\ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:65$70'.
+Removing empty process `ascon_core_adpt_encdec.$proc$/foss/designs/ascon_run_deffile/ascon_core_adpt_encdec.v:65$70'.
+Found and cleaned up 17 empty switches in `\axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+Removing empty process `axi_ascon.$proc$/foss/designs/ascon_run_deffile/axi_ascon.v:110$41'.
+Removing empty process `reset_sync.$proc$/foss/designs/ascon_run_deffile/reset_sync.v:15$32'.
+Found and cleaned up 9 empty switches in `\axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+Removing empty process `axi_master.$proc$/foss/designs/ascon_run_deffile/axi_master.v:61$27'.
+Found and cleaned up 6 empty switches in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+Removing empty process `spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:124$23'.
+Removing empty process `spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:105$19'.
+Found and cleaned up 3 empty switches in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+Removing empty process `spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:82$14'.
+Found and cleaned up 5 empty switches in `\spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+Removing empty process `spi_slave.$proc$/foss/designs/ascon_run_deffile/spi_slave.v:55$4'.
+Cleaned up 129 empty switches.
+
+12.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module A10_A.
+Optimizing module ascon_round_s2.
+<suppressed ~20 debug messages>
+Optimizing module ascon_core_adpt_encdec.
+<suppressed ~103 debug messages>
+Optimizing module axi_ascon.
+<suppressed ~95 debug messages>
+Optimizing module reset_sync.
+<suppressed ~4 debug messages>
+Optimizing module axi_master.
+<suppressed ~41 debug messages>
+Optimizing module spi_slave.
+<suppressed ~62 debug messages>
+Optimizing module ascon_round_s1.
+
+13. Executing FLATTEN pass (flatten design).
+Deleting now unused module ascon_round_s2.
+Deleting now unused module ascon_core_adpt_encdec.
+Deleting now unused module axi_ascon.
+Deleting now unused module reset_sync.
+Deleting now unused module axi_master.
+Deleting now unused module spi_slave.
+Deleting now unused module ascon_round_s1.
+<suppressed ~8 debug messages>
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \A10_A..
+Removed 173 unused cells and 1014 unused wires.
+<suppressed ~291 debug messages>

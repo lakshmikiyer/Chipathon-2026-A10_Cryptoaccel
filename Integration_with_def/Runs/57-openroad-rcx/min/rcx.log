@@ -1,0 +1,45 @@
+Reading technology LEF file at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__min.tlef'…
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__min.tlef, created 15 layers, 56 vias
+Reading cell LEF file at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
+[INFO ODB-0127] Reading DEF file: /foss/designs/ascon_run_deffile/runs/run11/56-odb-cellfrequencytables/A10_A.def
+[INFO ODB-0128] Design: A10_A
+[INFO ODB-0130]     Created 50 pins.
+[INFO ODB-0131]     Created 74585 components and 342208 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 282448 connections.
+[INFO ODB-0133]     Created 19976 nets and 59576 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ascon_run_deffile/runs/run11/56-odb-cellfrequencytables/A10_A.def
+Using RCX ruleset '/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.min'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.min -lef_res
+[INFO RCX-0435] Reading extraction model file /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.min ...
+[INFO RCX-0436] RC segment generation A10_A (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 60116 rc segments
+[INFO RCX-0439] Coupling Cap extraction A10_A ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 47% of 118570 wires extracted
+[INFO RCX-0442] 100% of 118570 wires extracted
+[INFO RCX-0045] Extract 19976 nets, 80089 rsegs, 80089 caps, 175053 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Fill cell                             46330  597480.76
+  Tap cell                               7402   32497.74
+  Antenna cell                            155     680.51
+  Tie cell                                 43     377.57
+  Standard cell                         20111  507025.34
+  Total                                 74585 1140450.30
+Writing extracted parasitics to '/foss/designs/ascon_run_deffile/runs/run11/57-openroad-rcx/min/A10_A.min.spef'…
+[INFO RCX-0443] 19976 nets finished
