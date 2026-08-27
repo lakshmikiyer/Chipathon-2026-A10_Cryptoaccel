@@ -84,10 +84,10 @@ module spi_slave (
             txcnt<=0; miso_sr<=0; miso<=0;
         end else if (cs_active) begin
             txcnt <= txcnt + 6'd1;
-            if (txcnt == 6'd8) begin             // first data bit: grab read result
+            if (txcnt == 6'd7) begin             // first data bit: grab read result
                 miso    <= rd_data_clk[31];      // rd_data_clk is stable by now
                 miso_sr <= {rd_data_clk[30:0], 1'b0};
-            end else if (txcnt > 6'd8) begin     // shift out remaining 31 data bits
+            end else if (txcnt > 6'd7) begin     // shift out remaining 31 data bits
                 miso    <= miso_sr[31];
                 miso_sr <= {miso_sr[30:0], 1'b0};
             end else begin
