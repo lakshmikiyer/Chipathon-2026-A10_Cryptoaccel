@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/foss/designs/deffile_cv2/runs/run3/tmp/f636ab7b8ab94630af89daff186fca02.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/foss/designs/deffile_cv2/runs/run3/tmp/f636ab7b8ab94630af89daff186fca02.bb.v"

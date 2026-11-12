@@ -1,0 +1,71 @@
+Reading timing models for corner min_ff_n40C_3v60…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading OpenROAD database at '/foss/designs/deffile_cv2/runs/run3/28-openroad-globalplacement/A10_CV2.odb'…
+Reading design constraints file at '/foss/designs/deffile_cv2/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 3 gf180mcu_fd_sc_mcu7t5v0__buf_1 input buffers.
+[INFO RSZ-0028] Inserted 1 gf180mcu_fd_sc_mcu7t5v0__buf_1 output buffers.
++ repair_design -verbose -max_wire_length 180 -slew_margin 35 -cap_margin 35
+[WARNING RSZ-0065] max wire length less than 28858u increases wire delays.
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     11061
+     1000 |     +0.0% |       0 |       0 |             0 |     10061
+     2000 |     +0.6% |       1 |     152 |            22 |      9061
+     3000 |     +1.1% |       6 |     277 |            43 |      8061
+     4000 |     +1.2% |       7 |     304 |            55 |      7061
+     5000 |     +2.7% |      13 |     680 |           112 |      6061
+     6000 |     +4.4% |      23 |    1046 |           137 |      5061
+     7000 |     +8.2% |      37 |    2009 |           344 |      4061
+     8000 |     +9.8% |      37 |    2456 |           581 |      3061
+     9000 |    +11.1% |      40 |    2751 |           668 |      2061
+    10000 |    +12.9% |      40 |    3235 |           844 |      1061
+    11000 |    +15.4% |      42 |    3531 |           864 |        61
+    final |    +15.6% |      43 |    3561 |           868 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 78 slew violations.
+[INFO RSZ-0036] Found 67 capacitance violations.
+[INFO RSZ-0037] Found 868 long wires.
+[INFO RSZ-0039] Resized 43 instances.
+[INFO RSZ-0038] Inserted 3561 buffers in 868 nets.
+[INFO RSZ-0042] Inserted 35 tie gf180mcu_fd_sc_mcu7t5v0__tiel instances.
+[INFO RSZ-0042] Inserted 8 tie gf180mcu_fd_sc_mcu7t5v0__tieh instances.
+[WARNING RSZ-0020] found 2 floating nets.
+ VDD
+ VSS
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement      65592.5 u
+average displacement        3.0 u
+max displacement           23.9 u
+original HPWL          852441.9 u
+legalized HPWL         906988.1 u
+delta HPWL                    6 %
+
+[INFO DPL-0020] Mirrored 6381 instances
+[INFO DPL-0021] HPWL before          906988.1 u
+[INFO DPL-0022] HPWL after           891603.9 u
+[INFO DPL-0023] HPWL delta               -1.7 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 14432 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               6715   29481.54
+  Tie cell                                 43     377.57
+  Timing Repair Buffer                   3565   56781.04
+  Inverter                                371    3275.24
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  173721.54
+  Total                                 21875  459036.08
+Writing OpenROAD database to '/foss/designs/deffile_cv2/runs/run3/32-openroad-repairdesignpostgpl/A10_CV2.odb'…
+Writing netlist to '/foss/designs/deffile_cv2/runs/run3/32-openroad-repairdesignpostgpl/A10_CV2.nl.v'…
+Writing powered netlist to '/foss/designs/deffile_cv2/runs/run3/32-openroad-repairdesignpostgpl/A10_CV2.pnl.v'…
+Writing layout to '/foss/designs/deffile_cv2/runs/run3/32-openroad-repairdesignpostgpl/A10_CV2.def'…
+Writing timing constraints to '/foss/designs/deffile_cv2/runs/run3/32-openroad-repairdesignpostgpl/A10_CV2.sdc'…

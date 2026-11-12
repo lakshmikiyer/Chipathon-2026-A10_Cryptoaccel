@@ -1,0 +1,208 @@
+Reading timing models for corner min_ff_n40C_3v60…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading OpenROAD database at '/foss/designs/deffile_cv2/runs/run3/34-openroad-detailedplacement/A10_CV2.odb'…
+Reading design constraints file at '/foss/designs/deffile_cv2/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Configuring cts characterization…
++ configure_cts_characterization 
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): clk_IN
+[INFO] Running Clock Tree Synthesis…
++ clock_tree_synthesis -buf_list gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 gf180mcu_fd_sc_mcu7t5v0__clkbuf_4 -root_buf gf180mcu_fd_sc_mcu7t5v0__clkbuf_4 -apply_ndr none
+[INFO CTS-0050] Root buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.
+[INFO CTS-0051] Sink buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_4
+[INFO CTS-0049] Characterization buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.
+[INFO CTS-0007] Net "clk_IN" found for clock "clk_IN".
+[INFO CTS-0010]  Clock net "clk_IN" has 2456 sinks.
+[INFO CTS-0007] Net "sclk_IN" found for clock "sclk_IN".
+[INFO CTS-0010]  Clock net "sclk_IN" has 129 sinks.
+[INFO CTS-0008] TritonCTS found 2 clock nets.
+[INFO CTS-0097] Characterization used 2 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_IN.
+[INFO CTS-0028]  Total number of sinks: 2456.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(48890, 74480), (1898790, 2144240)].
+[INFO CTS-0024]  Normalized sink region: [(1.24719, 1.9), (48.4385, 54.7)].
+[INFO CTS-0025]     Width:  47.1913.
+[INFO CTS-0026]     Height: 52.8000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 1228
+    Sub-region size: 47.1913 X 26.4000
+[INFO CTS-0034]     Segment length (rounded): 14.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 614
+    Sub-region size: 23.5957 X 26.4000
+[INFO CTS-0034]     Segment length (rounded): 12.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 307
+    Sub-region size: 23.5957 X 13.2000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 154
+    Sub-region size: 11.7978 X 13.2000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 77
+    Sub-region size: 11.7978 X 6.6000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 6
+    Direction: Horizontal
+    Sinks per sub-region: 39
+    Sub-region size: 5.8989 X 6.6000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 7
+    Direction: Vertical
+    Sinks per sub-region: 20
+    Sub-region size: 5.8989 X 3.3000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 8
+    Direction: Horizontal
+    Sinks per sub-region: 10
+    Sub-region size: 2.9495 X 3.3000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 2456.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net sclk_IN.
+[INFO CTS-0028]  Total number of sinks: 129.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(480105, 168560), (1964855, 2152080)].
+[INFO CTS-0024]  Normalized sink region: [(12.2476, 4.3), (50.1239, 54.9)].
+[INFO CTS-0025]     Width:  37.8763.
+[INFO CTS-0026]     Height: 50.6000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 65
+    Sub-region size: 37.8763 X 25.3000
+[INFO CTS-0034]     Segment length (rounded): 12.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 33
+    Sub-region size: 18.9381 X 25.3000
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 17
+    Sub-region size: 18.9381 X 12.6500
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 9
+    Sub-region size: 9.4691 X 12.6500
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 129.
+[INFO CTS-0018]     Created 325 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 4.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 325 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:1, 5:6, 6:19, 7:28, 8:44, 9:41, 10:40, 11:20, 12:15, 13:22, 14:10, 15:5, 16:2, 17:2, 24:1..
+[INFO CTS-0017]     Max level of the clock tree: 8.
+[INFO CTS-0018]     Created 21 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 21 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2, 5:2, 6:1, 7:2, 8:2, 9:2, 10:3, 11:1, 16:1..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0098] Clock net "clk_IN"
+[INFO CTS-0099]  Sinks 2635
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 1581.90 um
+[INFO CTS-0102]  Path depth 4 - 4
+[INFO CTS-0207]  Dummy loads inserted 179
+[INFO CTS-0098] Clock net "sclk_IN"
+[INFO CTS-0099]  Sinks 141
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 1366.19 um
+[INFO CTS-0102]  Path depth 3 - 3
+[INFO CTS-0207]  Dummy loads inserted 12
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 28858um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 2148 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               6715   29481.54
+  Tie cell                                 43     377.57
+  Clock buffer                            375   11142.84
+  Timing Repair Buffer                   3565   56781.04
+  Inverter                                371    3275.24
+  Clock inverter                          162    2809.86
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  173721.54
+  Total                                 22412  472988.77
+Writing OpenROAD database to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.odb'…
+Writing netlist to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.nl.v'…
+Writing powered netlist to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.pnl.v'…
+Writing layout to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.def'…
+Writing timing constraints to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.sdc'…
+[INFO] Legalizing…
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       5220.9 u
+average displacement        0.2 u
+max displacement           15.9 u
+original HPWL          929939.4 u
+legalized HPWL         948466.7 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 6592 instances
+[INFO DPL-0021] HPWL before          948466.7 u
+[INFO DPL-0022] HPWL after           931733.1 u
+[INFO DPL-0023] HPWL delta               -1.8 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               6715   29481.54
+  Tie cell                                 43     377.57
+  Clock buffer                            375   11142.84
+  Timing Repair Buffer                   3565   56781.04
+  Inverter                                371    3275.24
+  Clock inverter                          162    2809.86
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  173721.54
+  Total                                 22412  472988.77
+Writing OpenROAD database to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.odb'…
+Writing netlist to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.nl.v'…
+Writing powered netlist to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.pnl.v'…
+Writing layout to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.def'…
+Writing timing constraints to '/foss/designs/deffile_cv2/runs/run3/35-openroad-cts/A10_CV2.sdc'…
+%OL_CREATE_REPORT cts.rpt
+Total number of Clock Roots: 2.
+Total number of Buffers Inserted: 346.
+Total number of Clock Subnets: 346.
+Total number of Sinks: 2585.
+Cells used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_4: 346
+Dummys used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_2: 29
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_2: 38
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_4: 1
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_8: 2
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_12: 1
+  gf180mcu_fd_sc_mcu7t5v0__inv_2: 42
+  gf180mcu_fd_sc_mcu7t5v0__inv_3: 30
+  gf180mcu_fd_sc_mcu7t5v0__inv_4: 47
+  gf180mcu_fd_sc_mcu7t5v0__inv_8: 1
+%OL_END_REPORT

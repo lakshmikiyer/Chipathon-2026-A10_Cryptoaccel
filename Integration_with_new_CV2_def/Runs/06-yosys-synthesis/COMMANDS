@@ -1,0 +1,1 @@
+yosys -y /usr/local/lib/python3.12/dist-packages/librelane/scripts/pyosys/synthesize.py -- --config-in /foss/designs/deffile_cv2/runs/run3/06-yosys-synthesis/config.json --extra-in /foss/designs/deffile_cv2/runs/run3/06-yosys-synthesis/extra.json --output /foss/designs/deffile_cv2/runs/run3/06-yosys-synthesis/A10_CV2.nl.v

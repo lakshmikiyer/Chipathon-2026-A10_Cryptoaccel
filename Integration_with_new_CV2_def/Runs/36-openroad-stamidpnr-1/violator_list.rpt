@@ -1,0 +1,18 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold in-reg] cs_n_IN -> _16886_/D : -0.969635
+[hold in-reg] mosi_IN -> _16951_/D : -0.305704
+[hold in-reg] mosi_IN -> _16879_/D : -0.255341
+[hold in-reg] cs_n_IN -> _16873_/D : -0.145519
+[hold in-reg] cs_n_IN -> _16880_/D : -0.135401
+[hold reg-reg] _16995_/Q -> _16872_/D : -0.072646
+[hold reg-reg] _16994_/Q -> _16869_/D : -0.063665
+[hold in-reg] cs_n_IN -> _16874_/D : -0.057867
+Writing metric timing__hold_vio__count__corner:max_ss_125C_3v00: 8
+Writing metric timing__hold_r2r__ws__corner:max_ss_125C_3v00: -0.072646
+Writing metric timing__hold_r2r_vio__count__corner:max_ss_125C_3v00: 2
+Writing metric timing__setup_vio__count__corner:max_ss_125C_3v00: 0
+Writing metric timing__setup_r2r__ws__corner:max_ss_125C_3v00: 26.366102
+Writing metric timing__setup_r2r_vio__count__corner:max_ss_125C_3v00: 0

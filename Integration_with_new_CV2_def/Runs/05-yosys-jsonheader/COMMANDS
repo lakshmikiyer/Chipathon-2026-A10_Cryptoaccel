@@ -1,0 +1,1 @@
+yosys -y /usr/local/lib/python3.12/dist-packages/librelane/scripts/pyosys/json_header.py -- --config-in /foss/designs/deffile_cv2/runs/run3/05-yosys-jsonheader/config.json --extra-in /foss/designs/deffile_cv2/runs/run3/05-yosys-jsonheader/extra.json --output /foss/designs/deffile_cv2/runs/run3/05-yosys-jsonheader/A10_CV2.h.json

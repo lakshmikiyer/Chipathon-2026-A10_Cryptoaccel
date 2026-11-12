@@ -1,0 +1,40 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading OpenROAD database at '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/1-odb-fuzzydiodeplacement/A10_CV2.odb'…
+Reading design constraints file at '/foss/designs/deffile_cv2/constraints_run2_maxtran6.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        512.4 u
+average displacement        0.0 u
+max displacement           16.8 u
+original HPWL          981550.8 u
+legalized HPWL        1010091.4 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 10413 instances
+[INFO DPL-0021] HPWL before          1010091.4 u
+[INFO DPL-0022] HPWL after           981625.0 u
+[INFO DPL-0023] HPWL delta               -2.8 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 480 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             544    2388.38
+  Tap cell                               6715   29481.54
+  Antenna cell                            125     548.80
+  Tie cell                                 43     377.57
+  Clock buffer                            375   11142.84
+  Timing Repair Buffer                   8577  122795.10
+  Inverter                                371    3275.24
+  Clock inverter                          162    2809.86
+  Sequential cell                        2585  193010.76
+  Multi-Input combinational cell         8052  173721.54
+  Total                                 27549  539551.62
+Writing OpenROAD database to '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_CV2.odb'…
+Writing netlist to '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_CV2.nl.v'…
+Writing powered netlist to '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_CV2.pnl.v'…
+Writing layout to '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_CV2.def'…
+Writing timing constraints to '/foss/designs/deffile_cv2/runs/run3/43-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/A10_CV2.sdc'…

@@ -1,0 +1,340 @@
+{
+  "project_size": {
+    "source_gds": "/Users/kanobailey/chipathon/2026/data/A10/Integration_with_def/Runs/final/gds/A10_A.gds",
+    "top_cell": "A10_A",
+    "block_type": "digital",
+    "layout_dbu_microns": 0.001,
+    "physical_bbox_dbu": [
+      20850,
+      70130,
+      1060510,
+      1090190
+    ],
+    "physical_bbox_microns": [
+      "20.85",
+      "70.13",
+      "1060.51",
+      "1090.19"
+    ],
+    "prboundary_dbu": [
+      0,
+      0,
+      1110000,
+      1110000
+    ],
+    "prboundary_microns": [
+      "0",
+      "0",
+      "1110",
+      "1110"
+    ],
+    "width_microns": "1039.66",
+    "height_microns": "1020.06",
+    "top_cell_text": [
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "VSS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "clk_SL",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "cs_n_SL",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "miso_SL",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "mosi_SL",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "rst_n_SL",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_CS",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_IE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_IN",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_OE",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_OUT",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_PD",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_PU",
+        "layer": 36,
+        "datatype": 10
+      },
+      {
+        "text": "sclk_SL",
+        "layer": 36,
+        "datatype": 10
+      }
+    ]
+  },
+  "participant_pin_count": 8,
+  "selected_variants": [
+    "A"
+  ]
+}

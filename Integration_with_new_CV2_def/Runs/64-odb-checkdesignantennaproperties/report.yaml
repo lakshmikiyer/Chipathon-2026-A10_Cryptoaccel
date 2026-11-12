@@ -1,0 +1,5 @@
+- cell: A10_CV2
+  inout: []
+  input:
+  - miso_IN
+  output: []
